@@ -1,0 +1,30 @@
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalOrder.php on line 6
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalOrder.php on line 7
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/ResentOrder.php on line 6
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/ResentOrder.php on line 7
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalCustomer.php on line 6
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalCustomer.php on line 7
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalUser.php on line 6
+[21-Jan-2021 09:06:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalUser.php on line 7
+[21-Jan-2021 09:06:39 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:39 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/PerPageViews.php on line 6
+[21-Jan-2021 09:06:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/PerPageViews.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/PerPageViews.php on line 6
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/PerPageViews.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalOrder.php on line 6
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalOrder.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalCustomer.php on line 6
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalCustomer.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/c6xrtfm4ane1/public_html/admin/connection.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/ResentOrder.php on line 6
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/ResentOrder.php on line 7
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalUser.php on line 6
+[21-Jan-2021 09:06:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/c6xrtfm4ane1/public_html/admin/back-end/dashbord/TotalUser.php on line 7

@@ -1,0 +1,59 @@
+<?php
+require("../../connection.php");
+$html = "";
+$i = 1;
+$sql = "SELECT * FROM `slider`";
+$check = mysqli_query($connection, $sql);
+if ($check) {
+    if (mysqli_num_rows($check) > 0) {
+        while ($row = mysqli_fetch_array($check)) {
+            $html .= '<tr>';
+            $html .= '<td>' . $i . '</td>';
+            $html .= '<td>' . $row["Title"] . '</td>';
+            if ($row['Detail'] == "") {
+                $html .= '<td style="color:green">N/A</td>';
+            } else if (strlen($row['Detail']) > 40) {
+                $html .= '<td>' . $substr($row['Detail'], 0, 30) . "......" . '</td>';
+            } else {
+                $html .= '<td>' . $row["Detail"] . '</td>';
+            }
+
+            //Image
+            if ($row['Image'] == "") {
+                $html .= '<td style="color:green">N/A</td>';
+            } else {
+                $html .= '<td class="p-0 d-flex justify-content-center"><img style="height:68px" class="img-thumbnail rounded" src="uploads/slider/' . $row['Image'] . '"></td>';
+            }
+            //Alt
+            if ($row["Alt"] == "" || $row["Alt"] == null) {
+                $html .= '<td style="color:green">N/A</td>';
+            } else {
+                $html .= '<td>' . $row["Alt"] . '</td>';
+            }
+            //Alt
+            if ($row["Link"] == "" || $row["Link"] == null) {
+                $html .= '<td style="color:green">N/A</td>';
+            } else {
+                $html .= '<td>' . $row["Link"] . '</td>';
+            }
+
+            $html .= '<td>
+        <div class="d-flex justify-content-end">
+        <a href="#" data-toggle="modal" class="CommentIcon" data-target="#EditSliderRecord" 
+        data-id="' . $row[0] . '" >
+            <i class="mdi mdi-circle-edit-outline text-dark" style="font-size:18px;cursor:pointer;color: #747a80;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit Record"></i>
+        </a>
+        <a href="#" data-toggle="modal"  class="CommentIcon" data-target="#DeleteSliderRecord" 
+        data-id="' . $row[0] . '">
+            <i class="mdi mdi-delete-empty-outline text-dark" style="font-size:20px;cursor:pointer;color: #747a80;" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Delete Record"></i>
+        </a>
+        </div>
+        ';
+            $html .= '</tr>';
+            $i++;
+        }
+        echo json_encode(["status" => "success", "html" => $html]);
+    } else {
+        echo json_encode(["status" => "empty"]);
+    }
+}
