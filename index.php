@@ -331,7 +331,7 @@ $currentDate = date("Y-m-d");
         <div class="container">
              <!-- Section Title Start -->
  <div class="section-title2 text-center">
-                    <h2 class="title">News and Company Profile</h2>
+                    <h2 class="title">Events and Company Profile</h2>
                 </div>
             <div class="row learts-mb-n50">
 

@@ -81,7 +81,7 @@ $currentDate = date("Y-m-d");
                         <div class="col-md-6 col-12 learts-mb-40">
                             <div class="blog">
                                 <div class="image">
-                                    <a href="#"><img src="./assets/images/banner/news&events/2.jpeg" alt="Events"></a>
+                                    <a href="#"><img src="./assets/images/banner/news&events/e1.jpg" alt="Events"></a>
                                 </div>
                             </div>
                         </div>
