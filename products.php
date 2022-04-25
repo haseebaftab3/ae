@@ -6,6 +6,7 @@
     if (isset($_GET["List"]) && !empty($_GET["List"])) {
         $Cat_ID = $_GET["List"];
     }
+
     $SendSaleId = "NULL";
     $SendSalePrice = 0;
     $NewPrice = 0;
@@ -64,6 +65,21 @@
                             <h1 class="title">Shop</h1>
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <?php
+                                if (!empty($_GET["Name"]) && isset($_GET["Name"])) {
+                                    if(!empty($_GET["ParentID"]) && isset($_GET["ParentID"])){
+                                        ?>
+                                        <li class="breadcrumb-item"><a href="shop.php?List=<?php echo $_GET["ParentID"] ?>"><?php echo $_GET["Name"] ?></a></li>
+                                        <?php
+                                    }else{
+                                        ?>
+                                        <li class="breadcrumb-item"><a href="#"><?php echo $_GET["Name"] ?></a></li>
+                                        <?php
+                                    }
+                                    
+                                }
+                                ?>
+                                
                                 <li class="breadcrumb-item active">Products</li>
                             </ul>
                         </div>
@@ -84,28 +100,7 @@
                     <div class="container">
                         <div class="row learts-mb-n20">
 
-                            <!-- Isotop Filter Start -->
-                            <?php
-                            $Fetch_Sub_Cat = "SELECT * FROM `category` WHERE `Parent_ID` != 'NULl' AND `Parent_ID` = $Cat_ID  AND `Status` = 'True' ORDER BY `category`.`Sort_Order` ASC";
-                            $Check_Sub_Cat = mysqli_query($connection, $Fetch_Sub_Cat);
-                            if (mysqli_num_rows($Check_Sub_Cat) > 0) {
-                            ?>
-                                <div class="col-md col-12 align-self-center learts-mb-20">
-                                    <div class="isotope-filter shop-product-filter" data-target="#shop-products">
-                                        <button class="active" data-filter="*">all</button>
-                                        <?php
-                                        while ($Row_Sub_Cat = mysqli_fetch_array($Check_Sub_Cat)) {
-                                        ?>
-                                            <button data-filter=".Sort_List_No_<?php echo $Row_Sub_Cat["ID"] ?>"><?php echo $Row_Sub_Cat["Name"] ?></button>
-                                        <?php
-                                        }
-                                        ?>
-                                    </div>
-                                </div>
-                            <?php
-
-                            }
-                            ?>
+                            
                             <!-- Isotop Filter End -->
 
                             <div class="col-md-auto col-12 learts-mb-20">
@@ -150,18 +145,13 @@
                             <div class="grid-sizer col-1"></div>
 
                             <?php
-                            $Sub_Cat_SQL = "SELECT * FROM `category`  WHERE `Parent_ID`=$Cat_ID  ORDER BY `category`.`Sort_Order` DESC ";
-                            $Sub_Cat_Check = mysqli_query($connection, $Sub_Cat_SQL);
-                            if ($Sub_Cat_Check) {
-                                while ($Sub_Cat_Row = mysqli_fetch_array($Sub_Cat_Check)) {
-                                    $Cat_ID = $Sub_Cat_Row["ID"];
                                     $Prodcucts_SQL = "SELECT * FROM `products` WHERE `Category_ID`= $Cat_ID ORDER BY `products`.`SortOrder` DESC";
                                     $Prodcucts_Check = mysqli_query($connection, $Prodcucts_SQL);
                                     while ($Prodcuts_Row = mysqli_fetch_array($Prodcucts_Check)) {
-                                        $Prodcuts_ID = $Prodcuts_Row["ID"];
                                         $Product_ID = $Prodcuts_Row["ID"];
+                                        $Prodcuts_ID = $Prodcuts_Row["ID"];
                             ?>
-                                        <div class="grid-item col Sort_List_No_<?php echo $Cat_ID ?>">
+                                        <div class="grid-item col">
 
                                             <div class="product">
                                                 <div class="product-thumb">
@@ -323,8 +313,8 @@
                                         </div>
                             <?php
                                     }
-                                }
-                            }
+                                
+                            
                             ?>
 
 

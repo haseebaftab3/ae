@@ -5,6 +5,7 @@ if (!isset($_SESSION)) {
 require("./connection.php");
 if (isset($_GET["List"]) && !empty($_GET["List"])) {
     $Cat_ID = $_GET["List"];
+    $Cat_ID_URL = $_GET["List"];
 }
 $SendSaleId = "NULL";
 $SendSalePrice = 0;
@@ -98,14 +99,14 @@ $currentDate = date("Y-m-d");
 
                                         <div class="product">
                                             <div class="product-thumb">
-                                                <a href="detail.php?Product=<?php echo $Sub_Cat_Row["ID"] ?>" class="image">
+                                                <a href="products.php?List=<?php echo $Sub_Cat_Row["ID"] ?>&Name=<?php echo $Sub_Cat_Row["Name"] ?>&ParentID=<?php echo $Cat_ID_URL ?>" class="image">
                                                         <img src="admin/uploads/Categories/<?php echo $Sub_Cat_Row["Image"] ?>" alt="<?php echo $Sub_Cat_Row["Name"] ?>">
                                                     <?php
                                                      ?>
                                                 </a>
                                             </div>
                                             <div class="product-info">
-                                                <h6 class="title"><a href="detail.php?Product=<?php echo $Sub_Cat_Row["ID"] ?>"><?php echo $Sub_Cat_Row["Name"] ?></a></h6>
+                                                <h6 class="title"><a href="products.php?List=<?php echo $Sub_Cat_Row["ID"] ?>&Name=<?php echo $Sub_Cat_Row["Name"] ?>&ParentID=<?php echo $Cat_ID_URL ?>"><?php echo $Sub_Cat_Row["Name"] ?></a></h6>
                                             </div>
                                         </div>
                                     </div>
