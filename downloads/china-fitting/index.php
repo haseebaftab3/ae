@@ -256,13 +256,7 @@ function loadApp() {
 		resizeViewport();
 	});
 
-	// Regions
-
-	if ($.isTouch) {
-		$('.magazine').bind('touchstart', regionClick);
-	} else {
-		$('.magazine').click(regionClick);
-	}
+	
 
 	// Events for the next button
 
